@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Prueba</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <form enctype="multipart/form-data" action="index.php" method="POST">
+            <fieldset>
+                <legend>Datos</legend>
+                    <input type="hidden" name="oculto"/>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre del Usuario" id="nombre" name="nombre"/><br>
+                    <label for="apellidos">Apellido 1:</label>
+                    <input type="text" value="ADAITS" id="apellidos" name="apellidos[]"/><br>
+                    <label for="apellidos2">Apellido 2:</label>
+                    <input type="text" id="apellidos2" name="apellidos[]"/><br><br>
+                    <label for="contra">Contraseña</label>
+                    <input type="password" id="contra" name="contra"/><br>
+                    <label for="boton">¡Pulsa!</label>
+                    <input type="button" id="boton" name="boton"/><br><br>
+                    <input type="file" value="Subir ficheros" name="imagen"/><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                    <u>Comida:</u><br><br>
+                    <label for="manzana">Manzana</label>
+                    <input type="radio" value="Manzana" name="fruta" id="manzana" checked>
+                    <label for="pera">Pera</label>
+                    <input type="radio" value="Pera" name="fruta" id="pera">
+                    <label for="banana">Banana</label>
+                    <input type="radio" value="banana" name="fruta" id="banana"><br><br>
+                    <u>Hobbies</u><br><br>
+                    <label for="futbol">Futbol</label>
+                    <input type="checkbox" value="futbol" name="hobbies[]" id="futbol">
+                    <label for="videojuegos">Videojuegos</label>
+                    <input type="checkbox" value="videojuegos" name="hobbies[]" id="videojuegos">
+                    <label for="basket">Basket</label>
+                    <input type="checkbox" value="basket" name="hobbies[]" id="basket">
+            </fieldset>
+            <fieldset>
+                <legend>¡Colorines :D!</legend>
+                    <label for="colores">Elige un color: </label>
+                    <input type="color" name="colores" type="colores">
+            </fieldset>
+            <fieldset>
+                    <legend>Datos de contacto</legend>
+                        <label for="correo">Email: </label>
+                        <input type="email" name="correo" type="correo">
+            </fieldset>
+            <fieldset>
+                    <legend>Cosos</legend>
+                        <label for="numero">Numero: </label>
+                        <input type="number" value="25" min="0" step="5" max="500" name="numero" id="numero">
+                        <br><br>Rango:
+                        <input type="range" value="5" min="0" step="2" max="10"/><br><br>
+                        <input type="range" value="5" min="0" step="2" max="10" list="ticks2"/>
+                        <datalist id=ticks2>
+                            <option>0</option>
+                            <option>2</option>
+                            <option>4</option>
+                            <option>6</option>
+                            <option>8</option>
+                            <option>10</option>
+                        </datalist>
+            </fieldset>    
+            <input type="submit" name="Enviar"/>
+        </form>  
+    </body>
+</html>
