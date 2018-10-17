@@ -12,7 +12,7 @@
     <div class="separador">
         <form action="" method="post">
         <label for="username">Username:</label>
-        <input type="text" name="username">
+        <input type="text" name="username" required>
         <?php if(isset($error['username'])): ?>
                 <div class="error">
                     <p>Errores en el campo "Username"</p>
@@ -25,7 +25,7 @@
     </div>
     <div class="separador">
         <label for="pass">Password:</label>
-        <input type="password" name="pass">
+        <input type="password" name="pass" required>
         <?php if(isset($error['pass'])): ?>
                 <div class="error">
                     <p>Errores en el campo "Password"</p>

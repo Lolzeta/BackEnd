@@ -21,8 +21,9 @@ if(isset($_POST['send'])){
     }
 
     // Comprobacion contraseña patron
-    if(!preg_match("/^[(0-9{3,})(a-z{3,})(A-Z{3,})\_]*$/",$pass)){
-        $error['username']['no_valid'] = "El campo contraseña debe de tener como minimo tres numeros, tres letras minusculas y tres letras mayusculas";
+    if(!preg_match(
+        "/^(?=(.*?[A-Z]){3})(?=(.*?[a-z]){3})(?=(.*?\d){3})[0-9a-zA-Z]{9,}$/",$pass)){
+        $error['pass']['no_valid'] = "El campo contraseña debe de tener como minimo tres numeros, tres letras minusculas y tres letras mayusculas";
     }
     
 
