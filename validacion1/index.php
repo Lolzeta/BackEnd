@@ -19,7 +19,7 @@ if(isset($_POST['form_alta'])){
     }
 
     if(empty($edad)){
-        $error['nedad'] = ['campo_vacio' => 'El campo edad es obligatorio'];
+        $error['edad'] = ['campo_vacio' => 'El campo edad es obligatorio'];
     }
 
     if(empty($email)){
