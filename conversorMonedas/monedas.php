@@ -18,6 +18,22 @@ $moneda['us']['yen'] = 112.11;
 $moneda['us']['rublo'] = 65.4254;
 $moneda['us']['pesos'] = 36.4824;
 
+<<<<<<< HEAD
+// Cambio libra
+
+$moneda['libra']['euro'] = 1,13414;
+$moneda['libra']['us'] = 1,30624;
+$moneda['libra']['can'] = 1,71125;
+$moneda['libra']['yen'] = 146,98;
+$moneda['libra']['rublo'] = 85,5452;
+$moneda['libra']['pesos'] = 47,7543;
+
+// Cambio dolar canadiense
+
+$moneda['can']['euro'] = 0,66225;
+$moneda['can']['us'] = 0,76279;
+$moneda['can']['libra'] = 
+=======
 // Cambio dolar can
 
 $moneda['can']['us'] = 0,76290;
@@ -68,3 +84,4 @@ function cambioMoneda($cantidad, $moneda1, $moneda2){
 }
 
 ?>
+>>>>>>> 394e4e2e23f21e7921038f413a59682ec2ce8271
