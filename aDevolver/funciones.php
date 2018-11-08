@@ -57,9 +57,9 @@ function vuelta($importe, $pagado){
         $countMoneda = 0;
         // Mientras el devolver sea mayor o igual que la moneda (cual esta ordenado de mayor a menor) entrara en el bucle y contará las monedas
         // y restará el valor, hasta salir del bucle.
-        while($devolver >= $moneda){
+        while($devolver >= $valor){
         $countMoneda++;
-        $devolver -= $moneda;
+        $devolver -= $valor;
         }
         // Si el count es 0, no entrará
         if($countMoneda > 0){
