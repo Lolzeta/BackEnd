@@ -1,11 +1,13 @@
 <?php
-require_once 'constantes.php';
+
 require_once 'funciones.php';
+
+// Validaciones
 
 if (isset($_GET['importe']) && isset($_GET['pagado'])){
     $importe = $_GET['importe'];
     $pagado = $_GET['pagado'];
-    $devolver = ($pagado-$importe);
+    
 
     if(empty($importe)){
         $error['importe']['vacio'] = "El importe es un valor vacio.";

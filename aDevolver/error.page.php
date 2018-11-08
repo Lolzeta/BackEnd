@@ -1,3 +1,4 @@
+<!-- Página donde mostraremos los errores que tenga el usuario-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

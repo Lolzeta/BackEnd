@@ -1,3 +1,4 @@
+<!-- Mostramos el resultado con la funcion vuelta-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,6 @@
     <title>Cambio.</title>
 </head>
 <body>
-    Importe a pagar:<br/>
-    <?=$importe?> €<br/>
-    Importe pagado por el cliente:<br/>
-    <?=$pagado?> €<br/>
-    Importe a devolver:<br/>
-    <?=$devolver?> €<br/> 
-    <?=billetes($importe)?>
+   <p><?=vuelta($importe, $pagado)?></p>
 </body>
 </html>
